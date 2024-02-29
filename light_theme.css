@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    background: #b1b5b8;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    transition: height 0.5s ease;
+}
+.logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    transition: margin-top 0.5s ease, margin-left 0.5s ease, font-size 0.5s ease;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+    left: 0;
+}
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+nav.shrink {
+    height: 60px;
+}
+
+nav.shrink .logo {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+nav.shrink ul li a {
+    line-height: 60px;
+}
+
+nav.shrink .checkbtn {
+    line-height: 60px;
+}
+
+.rj {
+    width: 35px;
+}
+
+nav ul li.close-icon {
+    display: none;
+}
+
+nav #check:checked ~ ul li.close-icon {
+    display: block;
+    float: right;
+    margin-right: 20px;
+    line-height: 5px;
+}
+
+nav #check:checked ~ ul li.close-icon i {
+    color: white;
+    font-size: 30px;
+}
+
+nav ul li.close-icon {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+nav ul li.close-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+#weather {
+    position: absolute;
+    right: 20px; /* Adjust the right positioning as needed */
+    bottom: 0; /* Position the element at the bottom */
+    line-height: 30px;
+    color: #fff;
+}
+
+@media (max-width: 858px) {
+    #weather {
+        display: none; /* Hide the element in the small menu */
+    }
+}
+
+/* Add a CSS class to hide the element when scrolling down */
+.hide-on-scroll {
+    display: none;
+}
+
+/* Apply the class to the weather element using JavaScript */
