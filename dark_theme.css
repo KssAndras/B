@@ -67,6 +67,10 @@ a:hover {
     display: none;
     left: 0;
 }
+
+.welcome {
+    background-image: url(/Kepek/background.jpg);
+}
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
