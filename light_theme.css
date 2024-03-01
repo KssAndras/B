@@ -203,3 +203,19 @@ nav ul li.close-icon i {
     color: white;
     font-size: 20px;
 }
+
+/* Adjustments for iPhone 6 */
+@media only screen and (max-device-width: 375px) {
+    .logo {
+        width: 300px; /* Adjust logo size */
+        margin-top: 10px; /* Increase top margin */
+        margin-left: 10px; /* Adjust left margin */
+    }
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .checkbtn {
+        margin-right: 5px; /* Adjust margin for hamburger menu */
+    }
+}
