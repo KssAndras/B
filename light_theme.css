@@ -104,6 +104,7 @@ a:hover {
     }
     .welcome {
         background-size: cover;
+        background-attachment: fixed;
     }
 }
 
@@ -139,6 +140,7 @@ a:hover {
     }
     .welcome {
         background-size: cover;
+        background-attachment: fixed;
     }
 }
 
