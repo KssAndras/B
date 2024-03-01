@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+    width: 100%;
 }
 h1 {
     color: #fff;
@@ -93,7 +94,7 @@ a:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 200px;
 }
 
