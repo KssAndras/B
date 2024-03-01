@@ -1,8 +1,8 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    width: 100%;
 }
+
 h1 {
     color: #fff;
     text-align: center;
@@ -96,6 +96,12 @@ a:hover {
     background-position: center;
     min-height: 100vh;
     padding-top: 200px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 .services {
