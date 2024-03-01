@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-    background: #b1b5b8;
+    background: #125f99;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -94,6 +94,16 @@ a:hover {
     padding-top: 200px;
 }
 
+.services {
+    background-color: #fff;
+    height: 100vh;
+    padding-top: 200px;
+}
+
+.services h1 {
+    color: #2c3e50;
+}
+
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
@@ -101,13 +111,6 @@ a:hover {
     }
     nav ul li a {
         font-size: 16px;
-    }
-    .welcome {
-        background-image: url(Kepek/background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100vh;
-        padding-top: 200px;
     }
 }
 
@@ -140,13 +143,6 @@ a:hover {
     }
     #check:checked ~ ul {
         left: 0;
-    }
-    .welcome {
-        background-image: url(Kepek/background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100vh;
-        padding-top: 200px;
     }
 }
 
