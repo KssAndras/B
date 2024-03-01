@@ -87,7 +87,7 @@ a:hover {
 }
 
 .welcome {
-    background-image: url(/Kepek/background.jpg);
+    background-image: url(Kepek/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
