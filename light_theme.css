@@ -102,6 +102,9 @@ a:hover {
     nav ul li a {
         font-size: 16px;
     }
+    .welcome {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 858px) {
@@ -133,6 +136,9 @@ a:hover {
     }
     #check:checked ~ ul {
         left: 0;
+    }
+    .welcome {
+        background-size: cover;
     }
 }
 
@@ -183,24 +189,3 @@ nav ul li.close-icon i {
     color: white;
     font-size: 20px;
 }
-
-#weather {
-    position: absolute;
-    right: 20px; /* Adjust the right positioning as needed */
-    bottom: 0; /* Position the element at the bottom */
-    line-height: 30px;
-    color: #fff;
-}
-
-@media (max-width: 858px) {
-    #weather {
-        display: none; /* Hide the element in the small menu */
-    }
-}
-
-/* Add a CSS class to hide the element when scrolling down */
-.hide-on-scroll {
-    display: none;
-}
-
-/* Apply the class to the weather element using JavaScript */
