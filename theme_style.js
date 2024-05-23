@@ -3,7 +3,7 @@ function checkTimeAndSwitchTheme() {
     var hours = now.getHours();
 
     // If it's 6 PM or later, switch to dark theme
-    if (hours >= 18) {
+    if (hours >= 22) {
         document
             .getElementById("theme-style")
             .setAttribute("href", "dark_theme.css");
