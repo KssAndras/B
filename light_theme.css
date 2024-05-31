@@ -8,6 +8,7 @@ h1 {
     text-align: center;
     font-size: 3rem;
     font-weight: 200;
+    font-weight: bold;
 }
 
 * {
@@ -41,6 +42,7 @@ nav {
 
 .navbar-shrink {
     height: 60px; /* Set the height for the shrunk navbar */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
