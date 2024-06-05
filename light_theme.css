@@ -97,7 +97,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-    padding-top: 200px;
+    padding-top: 190px;
 }
 
 .welcome p {
@@ -112,6 +112,34 @@ a:hover {
     margin-top: 10px;
     border: 1px solid;
     border-radius: 5px;
+}
+
+.marketing {
+    display: flex;
+    justify-content: center; /* Középre igazítás */
+    align-items: center;
+    flex-wrap: wrap; /* Hogy a rugalmas átrendeződés lehetővé váljon */
+    padding-top: 100px;
+}
+
+.marketing .item {
+    margin: 0 10px; /* Az elemek közötti távolság beállítása */
+    text-align: center;
+    animation: slideInUp 1s ease-in-out; /* Az animáció hozzáadása */
+}
+
+.marketing img {
+    height: 15rem;
+}
+
+.marketing p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item {
+    padding: 80px; /* Eltávolítjuk a paddingot, hogy ne legyen extra távolság */
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -137,6 +165,17 @@ a:hover {
     }
     nav ul li a {
         font-size: 16px;
+    }
+    .marketing {
+        flex-direction: column;
+    }
+
+    .marketing .item {
+        margin: 10px 0; /* Függőleges távolság beállítása */
+    }
+
+    .item {
+        padding: 20px; /* Csökkentjük a paddingot, hogy szebben nézzen ki kisebb képernyőn */
     }
 }
 
@@ -235,4 +274,19 @@ nav ul li.close-icon i {
     .checkbtn {
         margin-right: 5px; /* Adjust margin for hamburger menu */
     }
+}
+
+/* Az animáció definíciója */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-in {
+    animation: slideInUp 1s ease-in-out;
 }
