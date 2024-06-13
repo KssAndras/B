@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-    background: #125f99;
+    background: #2c3e50;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -129,7 +129,7 @@ a:hover {
 }
 
 .marketing img {
-    height: 15rem;
+    height: 12rem;
 }
 
 .marketing p {
@@ -150,14 +150,64 @@ a:hover {
 
 .services {
     background-color: #fff;
-    height: 100vh;
-    padding-top: 200px;
+    background-image: url(Kepek/logo_hatter\ 25százalék.png);
+    background-size: 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center; /* Középre igazítás */
+    align-items: center;
+    flex-wrap: wrap; /* Hogy a rugalmas átrendeződés lehetővé váljon */
 }
 
 .services h1 {
     color: #2c3e50;
+    text-shadow: 2px 2px #2c3e5030;
+    margin-top: 200px;
+    margin-bottom: 50px;
 }
 
+.services .item {
+    margin: 0 10px; /* Az elemek közötti távolság beállítása */
+    text-align: center;
+    animation: slideInUp 1s ease-in-out; /* Az animáció hozzáadása */
+}
+
+.services img {
+    height: 8rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services p {
+    font-size: 1rem;
+}
+
+.services .item {
+    padding: 0px;
+    /*background-color: rgba(255, 0, 0, 0.416);*/
+    height: 350px;
+    width: 250px;
+}
+.about {
+    background-color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px #abacae30;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
@@ -176,6 +226,13 @@ a:hover {
 
     .item {
         padding: 20px; /* Csökkentjük a paddingot, hogy szebben nézzen ki kisebb képernyőn */
+    }
+
+    .services .item {
+        /*background-color: rgba(255, 0, 0, 0.416);*/
+        height: 300px;
+        width: 400px;
+        margin: 20px 5px;
     }
 }
 
