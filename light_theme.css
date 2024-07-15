@@ -149,7 +149,7 @@ a:hover {
 }
 
 .services {
-    background-color: #fff;
+    background-color: #ffffff;
     background-image: url(Kepek/LogoHatter15.png);
     background-size: 90%;
     background-attachment: fixed;
@@ -192,23 +192,73 @@ a:hover {
 
 .services .item {
     padding: 0px;
-    /*background-color: rgba(255, 0, 0, 0.416);*/
+    /* background-color: rgba(255, 0, 0, 0.416); */
     height: 350px;
-    width: 250px;
+    width: 350px;
 }
 .about {
     background-color: #2c3e50;
+    background-image: url(Kepek/pattern.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Meghatározza a sorok magasságát */
+    gap: 10px; /* Csökkenti az elemek közötti távolságot */
 }
 
 .about h1 {
     color: #ffffff;
     text-shadow: 2px 2px #abacae30;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 150px;
 }
+
+.about p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin: 40px;
+    text-align: justify;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.footer a i {
+    margin-right: 10px;
+}
+
+.footer a:last-child {
+    margin-top: 10px;
+}
+
+
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
