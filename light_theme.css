@@ -457,7 +457,7 @@ nav ul li.close-icon i {
   white-space: nowrap;
   border-right: 2px solid;
   width: 0; /* Kezdésnél 0 szélesség */
-  animation: typing 2s steps(30) 0.5s forwards, blink 1s step-end infinite;
+  animation: typing 2s steps(30) forwards, blink 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -465,12 +465,12 @@ nav ul li.close-icon i {
     width: 0;
   }
   to {
-    width: 19ch; /* 16 karakter szélességű */
+    width: 16ch; /* 16 karakter szélességű */
   }
 }
 
 @keyframes blink {
-  50% {
+  60% {
     border-color: transparent;
   }
 }
