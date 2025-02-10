@@ -85,7 +85,7 @@ nav ul li {
   }
   aside {
     position: fixed;
-    width: 300px;
+    width: auto;
     display: none;
   }
   .checkbtn {
@@ -95,7 +95,7 @@ nav ul li {
     display: block;
   }
   .typewriter h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
