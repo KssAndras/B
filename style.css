@@ -51,7 +51,7 @@ nav ul li {
 .checkbtn {
   /* font-size: 20px; */
   color: rgb(84, 83, 83);
-  line-height: 80px;
+  padding-top: 40px;
   cursor: pointer;
   display: none;
   position: absolute;
@@ -62,6 +62,7 @@ nav ul li {
   display: none;
   left: 0;
 }
+
 .rj {
   width: 35px;
 }
@@ -78,6 +79,21 @@ nav ul li {
     top: 50%;
     transform: translateY(-50%);
   }
+  body {
+    grid-template-columns: 1fr;
+    padding: 0 4%; /* ez szorítja össze a képet */
+  }
+  aside {
+    position: fixed;
+    width: 300px;
+    display: none;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .show {
+    display: block;
+  }
 }
 
 aside {
@@ -90,6 +106,22 @@ aside {
   grid-area: sidebar;
   background-color: rgb(213, 201, 201);
 }
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%); /* Kezdetben kívül, balról */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Végeredményben a helyén */
+    opacity: 1;
+  }
+}
+
+aside.show {
+  display: block;
+  animation: slideInLeft 0.6s ease-out forwards;
+  left: 0; /* Amikor megjelenik, balra beállítjuk */
+}
 
 aside ul {
   margin-right: 20px;
@@ -99,23 +131,6 @@ aside ul {
 aside a {
   color: #757575;
   text-decoration: none;
-}
-@media (max-width: 858px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-  aside {
-    position: fixed;
-    width: 300px;
-    display: none;
-  }
-  .checkbtn {
-    display: block;
-    margin-right: 10px;
-  }
-  .show {
-    display: block;
-  }
 }
 
 main {

@@ -17,4 +17,3 @@ sidebar.addEventListener("click", function (event) {
   // Ha az elem nem a gomb, akkor bezárjuk a sidebar-t
   sidebar.classList.remove("show");
 });
-
