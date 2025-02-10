@@ -94,6 +94,9 @@ nav ul li {
   .show {
     display: block;
   }
+  .typewriter h1 {
+    font-size: 1.6rem;
+  }
 }
 
 aside {
@@ -139,6 +142,37 @@ main {
   text-align: justify;
   grid-area: main;
 }
+/* Kiírós animáció */
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0; /* Kezdésnél 0 szélesség */
+  animation: typing 1.2s steps(30) 0.5s forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch; /* 16 karakter szélességű */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Kiírós animáció vége*/
+
 .welcome {
   min-height: 100vh;
   padding-top: 40px;
