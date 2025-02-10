@@ -162,7 +162,7 @@ main {
     width: 0;
   }
   to {
-    width: 27ch; /* 16 karakter szélességű */
+    width: 20ch; /* 16 karakter szélességű */
   }
 }
 
